@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Share link</title>
+  <title>The Circle Bros</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
     body {
@@ -31,21 +31,27 @@
       margin-top: 0;
       margin-bottom: 40px;
       font-size: 0.95em;
+      text-align: center;
     }
     .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
+      max-width: 900px;
     }
     .friend-card {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 10px;
-      padding: 20px 25px;
+      padding: 25px 20px;
       text-align: center;
-      width: 220px;
+      width: 280px;
       transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
     .friend-card:hover {
       transform: translateY(-5px);
@@ -54,17 +60,28 @@
     .friend-name {
       font-size: 1.2em;
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       color: #ffffff;
+    }
+    .friend-link {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      word-break: break-all;
+      text-align: center;
     }
     .friend-link a {
       text-decoration: none;
       color: #00bcd4;
       font-weight: 500;
       border: 2px solid #00bcd4;
-      padding: 6px 14px;
+      padding: 8px 14px;
       border-radius: 6px;
       transition: background 0.3s, color 0.3s, border-color 0.3s;
+      display: inline-block;
+      max-width: 100%;
+      overflow-wrap: break-word;
+      line-height: 1.4;
     }
     .friend-link a:hover {
       background: #00bcd4;
@@ -76,23 +93,27 @@
       color: rgba(255,255,255,0.5);
       font-size: 0.85em;
       letter-spacing: 0.5px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <h1>Link Bersama</h1>
-  <p>CX tolol</p>
+  <p>melawan CX tolol</p>
 
   <div class="container">
     <div class="friend-card">
       <div class="friend-name">Lord Eva</div>
-      <div class="friend-link"><a href="https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing" target="_blank">https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing</a></div>
+      <div class="friend-link">
+        <a href="https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing" target="_blank">
+          https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing
+        </a>
+      </div>
     </div>
 
-  </div>
 
   <footer>
-    Built with brotherhood & respect © 2025
+    respect © 2025
   </footer>
 </body>
 </html>
