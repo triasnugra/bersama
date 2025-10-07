@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Share link</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-size: 2.3em;
+      color: #f2f2f2;
+      text-transform: uppercase;
+    }
+    p {
+      color: #ccc;
+      margin-top: 0;
+      margin-bottom: 40px;
+      font-size: 0.95em;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .friend-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 20px 25px;
+      text-align: center;
+      width: 220px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .friend-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+    .friend-name {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+    .friend-link a {
+      text-decoration: none;
+      color: #00bcd4;
+      font-weight: 500;
+      border: 2px solid #00bcd4;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
+    }
+    .friend-link a:hover {
+      background: #00bcd4;
+      color: #fff;
+      border-color: #00bcd4;
+    }
+    footer {
+      margin-top: 50px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85em;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link Bersama</h1>
+  <p>CX tolol</p>
+
+  <div class="container">
+    <div class="friend-card">
+      <div class="friend-name">Lord Eva</div>
+      <div class="friend-link"><a href="https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing" target="_blank">https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing</a></div>
+    </div>
+
+  </div>
+
+  <footer>
+    Built with brotherhood & respect © 2025
+  </footer>
+</body>
+</html>
