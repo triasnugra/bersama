@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Circle Bros</title>
+  <title>TPSGM</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
     body {
@@ -32,6 +32,12 @@
       margin-bottom: 40px;
       font-size: 0.95em;
       text-align: center;
+    }
+    /* Tulisan "melawan CX tolol" ditebalkan & dimiringkan */
+    p.tagline {
+      font-weight: 700;
+      font-style: italic;
+      color: #f2f2f2;
     }
     .container {
       display: flex;
@@ -70,18 +76,20 @@
       word-break: break-all;
       text-align: center;
     }
+    /* Link diperkecil tampilannya */
     .friend-link a {
       text-decoration: none;
       color: #00bcd4;
       font-weight: 500;
       border: 2px solid #00bcd4;
-      padding: 8px 14px;
+      padding: 6px 10px;
       border-radius: 6px;
       transition: background 0.3s, color 0.3s, border-color 0.3s;
       display: inline-block;
-      max-width: 100%;
+      max-width: 90%;
       overflow-wrap: break-word;
-      line-height: 1.4;
+      line-height: 1.3;
+      font-size: 0.8em; /* ukuran link lebih kecil */
     }
     .friend-link a:hover {
       background: #00bcd4;
@@ -89,17 +97,20 @@
       border-color: #00bcd4;
     }
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       color: rgba(255,255,255,0.5);
       font-size: 0.85em;
       letter-spacing: 0.5px;
       text-align: center;
+      width: 100%;
+      position: relative;
+      bottom: 0;
     }
   </style>
 </head>
 <body>
   <h1>Link Bersama</h1>
-  <p>melawan CX tolol</p>
+  <p class="tagline">melawan CX tolol</p>
 
   <div class="container">
     <div class="friend-card">
@@ -110,7 +121,7 @@
         </a>
       </div>
     </div>
-
+  </div>
 
   <footer>
     respect © 2025
