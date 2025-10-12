@@ -1,130 +1,94 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TPSGM Crew</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Koleksi Musik Bikini Bottom</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f2f2f2;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      background: url('https://i.imgur.com/gD1E6tG.jpg') center/cover no-repeat fixed; /* background SpongeBob ocean style */
+      color: #fff;
+      text-align: center;
+      backdrop-filter: blur(2px);
     }
     h1 {
-      font-weight: 600;
+      margin-top: 30px;
+      font-size: 28px;
       letter-spacing: 1px;
-      margin-bottom: 10px;
-      font-size: 2.3em;
-      color: #f2f2f2;
-      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
     }
-    p {
-      color: #ccc;
-      margin-top: 0;
-      margin-bottom: 40px;
-      font-size: 0.95em;
-      text-align: center;
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 950px;
+      margin: 0 auto;
     }
-    /* Tulisan "melawan CX tolol" ditebalkan & dimiringkan */
-    p.tagline {
-      font-weight: 700;
-      font-style: italic;
-      color: #f2f2f2;
+    .card {
+      background: rgba(255,255,255,0.85);
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      padding: 16px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      color: #222;
     }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      max-width: 900px;
+    .card:hover {
+      transform: translateY(-6px) rotate(-1deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
-    .friend-card {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 10px;
-      padding: 25px 20px;
-      text-align: center;
-      width: 280px;
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .friend-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-    }
-    .friend-name {
-      font-size: 1.2em;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: #ffffff;
-    }
-    .friend-link {
-      display: flex;
-      justify-content: center;
+    .card img {
       width: 100%;
-      word-break: break-all;
-      text-align: center;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #ffd93b;
     }
-    /* Link diperkecil tampilannya */
-    .friend-link a {
+    .username {
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    a {
       text-decoration: none;
-      color: #00bcd4;
-      font-weight: 500;
-      border: 2px solid #00bcd4;
-      padding: 6px 10px;
-      border-radius: 6px;
-      transition: background 0.3s, color 0.3s, border-color 0.3s;
-      display: inline-block;
-      max-width: 90%;
-      overflow-wrap: break-word;
-      line-height: 1.3;
-      font-size: 0.8em; /* ukuran link lebih kecil */
-    }
-    .friend-link a:hover {
-      background: #00bcd4;
-      color: #fff;
-      border-color: #00bcd4;
+      color: inherit;
     }
     footer {
-      margin-top: 60px;
-      color: rgba(255,255,255,0.5);
-      font-size: 0.85em;
-      letter-spacing: 0.5px;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      bottom: 0;
+      color: #fff;
+      font-size: 14px;
+      margin: 30px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <h1>Link Bersama</h1>
-  <p class="tagline">melawan CX tolol</p>
+  <h1>🎵 Koleksi Musik Bikini Bottom</h1>
 
-  <div class="container">
-    <div class="friend-card">
-      <div class="friend-name">👑Lord Eva👑</div>
-      <div class="friend-link">
-        <a href="https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing" target="_blank">
-          https://drive.google.com/drive/folders/1aZn8sLbOphtGm0QcZBzufh5dkkA6UMP5?usp=sharing
-        </a>
-      </div>
-    </div>
+  <div class="album">
+    <a href="https://drive.google.com/drive/folders/your-folder-id-spongebob" target="_blank" class="card">
+      <img src="https://i.imgur.com/VCh1kEH.png" alt="SpongeBob SquarePants">
+      <div class="username">SpongeBob</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/your-folder-id-patrick" target="_blank" class="card">
+      <img src="https://i.imgur.com/V7NykvR.png" alt="Patrick Star">
+      <div class="username">Patrick Star</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/your-folder-id-squidward" target="_blank" class="card">
+      <img src="https://i.imgur.com/F7TDFwv.png" alt="Squidward Tentacles">
+      <div class="username">Squidward</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/your-folder-id-krabs" target="_blank" class="card">
+      <img src="https://i.imgur.com/FWgRH7m.png" alt="Mr. Krabs">
+      <div class="username">Mr. Krabs</div>
+    </a>
   </div>
 
-  <footer>
-    respect © 2025
-  </footer>
+  <footer>© 2025 Koleksi Musik Bikini Bottom — Dibuat oleh Trias dan teman-teman 🪸</footer>
 </body>
 </html>
